@@ -20,7 +20,7 @@ class Converter extends React.Component {
                     //this.setState({ isLoad: false });
                 })
                 .catch(er => alert(`Проблем сервер ${er.message}`));
-        }, 5000);
+        }, 5);
     }
 
     render() {
@@ -63,3 +63,4 @@ class Converter extends React.Component {
         //alert()
     } 
 }
+export default Converter;
