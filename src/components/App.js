@@ -2,7 +2,9 @@ import React from 'react';
 import {Route, Switch, Link} from 'react-router-dom';
 import Converter from './Converter';
 import Home from './Home';
+// import Counter from './Counter';
 import NavigationBar from './NavigationBar';
+
 
 
 // import routes from '../routes';
@@ -30,10 +32,8 @@ class App extends React.Component {
     render() {
         return (
             <div>
-
                 <NavigationBar />
-
-
+                
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route path='/convert' component={Converter} />
